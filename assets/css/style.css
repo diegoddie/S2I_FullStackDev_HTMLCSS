@@ -298,7 +298,7 @@ header{
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 1s, cursor .8s step-end infinite alternate;
+    animation: typing 3s, cursor .8s step-end infinite alternate;
 }
 
 @keyframes cursor{
