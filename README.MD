@@ -17,3 +17,4 @@ I deployed the website at --> https://diego-lauricella.netlify.app/
 - HTML5
 - CSS3
 - Font Awesome (for icons)
+- FormSubmit
