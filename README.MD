@@ -6,7 +6,7 @@ I deployed the website at --> https://diego-lauricella.netlify.app/
 ## Features
 - Responsive design for various screen sizes.
 - Home section with a brief introduction and call-to-action buttons.
-- About Me section with personal details, skills, and education.
+- About Me section with personal details, skills, education, and a button that redirects to the CV page.
 - Skills section showcasing the technologies I have used.
 - Portfolio section displaying recent projects with links to GitHub and live demos.
 - Contact section with a form for inquiries and contact details.

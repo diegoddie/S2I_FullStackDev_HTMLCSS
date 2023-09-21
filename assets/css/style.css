@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Outfit:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+/*===========GENERIC CSS*/
 *{
     margin: 0;
     padding: 0;
@@ -277,12 +278,12 @@ header{
     margin-inline: auto;
 }
 
-.header__content h4{
+.header__content .subtitle{
     margin-bottom: 0.7rem;
     font-size: 1.5rem;
 }
 
-.header__content h4 span{
+.header__content .subtitle .name{
     color: #0054A3;
     font-weight: bolder;
     font-size: 1.7rem;
@@ -293,7 +294,7 @@ header{
     display: inline-block;
 }
 
-.text_effect h1{
+.text_effect .dynamic{
     border-right: 5px solid;
     width: 100%;
     white-space: nowrap;
@@ -309,7 +310,7 @@ header{
     from{width: 0}
 }
 
-.header__content p{
+.header__content .header_text{
     margin: 0.8rem 0 2rem;
 }
 
@@ -331,14 +332,14 @@ header{
 
 .header__socials a {
     background: #FFC2D7;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: black;
     padding: 0.5rem;
     display: inline-flex; 
     justify-content: center; 
     align-items: center; 
-    width: 2rem;
-    height: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
     border-radius: 50%;
     transition: var(--transition);
 }
@@ -412,7 +413,7 @@ h1.about{
     font-size: 1rem;
 }
 
-.about__details p {
+.about__details .about_text {
     margin-bottom: 0.6rem;
 }
 
@@ -450,13 +451,13 @@ section.skills{
     text-align: center;
 }
 
-.skills__category h3 {
+.skills__category .skill_category {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     justify-content: center;
 }
 
-ul {
+.frontend__stack, .backend__stack, .blockchain__stack, .frameworks__stack {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -477,7 +478,6 @@ ul {
     object-fit: cover;
     align-items: center;
     height: auto; 
-    cursor: pointer;
     transition: var(--transition);
 }
 
@@ -557,7 +557,7 @@ section.portfolio{
     transform: scale(1.05);
 }
 
-.portfolio__project h3 {
+.portfolio__project .project_title {
     font-size: 1.5rem;
     margin: 1rem 0;
     text-align: center;
@@ -580,7 +580,7 @@ section.contact{
     width: 30%;
 }
 
-.contact p{
+.contact .contact_text{
     padding-bottom: 2rem;
 }
 
@@ -696,11 +696,11 @@ footer{
         padding-top: 65px;
     }
 
-    .menu li{
+    .menu .menu-container{
         width: 100%;
     }
 
-    .menu li a, .menu li a:hover{
+    .menu .menu-container .menu_choice, .menu .menu-container .menu_choice:hover{
         padding: 30px;
         font-size: 24px;
         box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
@@ -729,15 +729,15 @@ footer{
         width: 90%; 
     }
 
-    .header__content h4 {
+    .header__content .subtitle {
         font-size: 1.2rem; /
     }
 
-    .header__content h4 span {
+    .header__content .subtitle .name {
         font-size: 1.4rem; 
     }
 
-    .text_effect h1 {
+    .text_effect .dynamic {
         font-size: 2rem; 
     }
     /*===========ABOUT*/

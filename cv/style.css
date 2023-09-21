@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Outfit:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+/*===========GENERIC CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #BDE0FE;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left_section{
+    position: relative;
+    background: #2c446f;
+    padding: 16px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profile .image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.profile h2 span{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.contact{
+    padding-top: 40px;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.contact ul{
+    position: relative;
+}
+
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact ul li .icon{
+    display: inline-block;
+    width: 24px;
+    font-size: 16px;
+    color: #9a9999;
+}
+
+.contact ul li span{
+    font-weight: 300;
+}
+
+.contact ul li .website{
+    font-size: 14px;
+}
+
+.contact.education li{
+    margin-bottom: 15px;
+}
+
+.contact.education h5, .contact.languages h5{
+    font-weight: 800;
+    font-size: 14px;
+    color: #9a9999;
+}
+
+.contact.education h4:nth-child(2){
+    font-weight: 500;
+}
+
+.contact.education h4{ 
+    font-weight: 300;
+}
+
+.contact.languages li {
+    display: flex; 
+    align-items: center;
+}
+
+.contact.languages h4{
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .right_section{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.container .right_section .about{
+    margin-bottom: 50px;
+}
+
+.container .right_section .about:last-child{
+    margin-bottom: 0;
+}
+
+.container .right_section .about .title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience .box{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.experience .box .year_company{
+    min-width: 150px;
+}
+
+.experience .box .year_company h5{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2c446f;
+}
+
+.experience .box .role h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #2c446f;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #2c446f;
+    font-weight: 600;
+}
+
+.skills .box ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .box ul li {
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: #f2f2f2; 
+    border-radius: 5px; 
+}
+
+.interests ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 25px;
+}
+
+.interests ul li{
+    list-style: none;
+    color: #2c446f;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interests ul li i{
+    color: #9a9999;
+    font-size: 16px;
+    width: 20px;
+}
+
+.interests a.btn {
+    background-color: #2c446f; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.interests a.btn:hover {
+    background-color: #0056b3; 
+}
+
+@media (max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interests ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:600px){
+    .about .box{
+        flex-direction: column;
+    }
+
+    .about .box .year_company{
+        margin-bottom: 5px;
+    }
+    .interests ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

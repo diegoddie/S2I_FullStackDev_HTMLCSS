@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/logo.png" type="image/png">
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
     <title>Diego Lauricella | Developer</title>
     <meta
         name="description"
@@ -34,9 +34,10 @@
     />
     <meta content="summary_large_image" name="twitter:card" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body class="refresh">
+    <!--START OF NAV-->
     <nav class="nav">
         <div class="logo">
             <a href="#">
@@ -47,26 +48,27 @@
             <input type="checkbox" class="toggle-menu">
             <div class="hamburger"></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="menu_container"><a href="#" class="menu_choice">Home</a></li>
+                <li class="menu_container"><a href="#about" class="menu_choice">About</a></li>
+                <li class="menu_container"><a href="#skills" class="menu_choice">Skills</a></li>
+                <li class="menu_container"><a href="#portfolio" class="menu_choice">Portfolio</a></li>
+                <li class="menu_container"><a href="#contact" class="menu_choice">Contact</a></li>
             </ul>
         </div>
     </nav>
     <!--END OF NAV-->
+    <!--START OF HEADER-->
     <header>
         <div class="container header__container">
             <article class="header__image">
-                <div><img src="./assets/images/foto2.png" alt="Header Image"></div>
+                <div><img src="/assets/images/foto2.png" alt="Header Image"></div>
             </article>
             <article class="header__content">
-                <h4>👋🏻I'm <span>Diego Lauricella</span>, a</h4>
+                <h4 class="subtitle">👋🏻I'm <span class="name">Diego Lauricella</span>, a</h4>
                 <div class="text_effect">
                     <h1 class="dynamic">Full Stack Developer</h1>
                 </div>
-                <p>
+                <p class="header_text">
                     I'm a determined individual with a strong desire to learn and a strong work ethic.<br/>
                     Passionate about innovation and problem-solving, I tackle challenges with determination, always eager to expand my knowledge.
                 </p>
@@ -84,14 +86,14 @@
         </div>
     </header>
     <!--END OF HEADER-->
+    <!--START OF ABOUT-->
     <section class="about" id="about">
         <h1 class="about">About Me</h1>
         <div class="container about__container">
             <div class="about__image">
-                <img src="./assets/images/projects.jpeg" alt="About Image">
+                <img src="/assets/images/projects.jpeg" alt="About Image">
             </div>
             <div class="about__details">
-                
                 <div class="about__cards">
                     <article class="about__card">
                         <i class="fa-solid fa-cake-candles"></i>
@@ -109,87 +111,88 @@
                         <small>25+ projects</small>
                     </article>
                 </div>
-                <p>
+                <p class="about_text">
                     I began programming in late 2021, starting with <strong>Python</strong> and then expanding my expertise with other languages and libraries like the <strong>MERN stack.</strong>
                 </p>
-                <p>
+                <p class="about_text">
                     Currently, I am attending the <strong>Full Stack Development</strong> Master at <strong>Start2Impact</strong>, an Italian B-Corp company that prioritizes innovative models and sustainable education.
                 </p>
-                <p>
+                <p class="about_text">
                     I have also a strong interest in <strong>blockchain technology</strong> and its potential. In July 2023, I obtained the <strong>Ethereum Developer Certification</strong> after attending Alchemy University's bootcamp and in september 2023 I completed the Blockchain Development Master at Start2Impact.
                 </p>
-                <a href="" class="btn" download target="_blank"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                <a href="/cv" class="btn" target="_blank">Resume</a>
             </div>
         </div>
     </section>
     <!--END OF ABOUT-->
+    <!--START OF SKILLS-->
     <section class="skills" id="skills">
         <h1>Skills</h1>
         <p>These are some of the technologies I have used for my projects.</p>
         <div class="container skills__container">
             <div class="skills__list">
                 <div class="skills__category">
-                    <h3>Frontend</h3>
+                    <h3 class="skill_category">Frontend</h3>
                     <ul class="frontend__stack">
                         <li class="stack__item">
-                            <img src="./assets/images/bootstrap.png" alt="Bootstrap">
+                            <img src="/assets/images/bootstrap.png" alt="Bootstrap">
                         </li>
                         <li class="stack__item">
-                            <img src="./assets/images/tailwind.png" alt="Tailwind CSS">
+                            <img src="/assets/images/tailwind.png" alt="Tailwind CSS">
                         </li>
                         <li class="stack__item">
-                            <img src="./assets/images/react.png" alt="React">
+                            <img src="/assets/images/react.png" alt="React">
                         </li>
                         <li class="stack__item">
-                            <img src="./assets/images/html.png" alt="React">
+                            <img src="/assets/images/html.png" alt="React">
                         </li>
                         <li class="stack__item">
-                            <img src="./assets/images/css.png" alt="React">
+                            <img src="/assets/images/css.png" alt="React">
                         </li>
                         <li class="stack__item">
-                            <img src="./assets/images/javascript.png" alt="React">
-                        </li>
-                    </ul>
-                </div>
-                <div class="skills__category">
-                    <h3>Backend</h3>
-                    <ul class="backend__stack">
-                        <li class="stack__item">
-                            <img src="./assets/images/node.png" alt="Node.js">
-                        </li>
-                        <li class="stack__item">
-                            <img src="./assets/images/postgresql.png" alt="Express.js">
-                        </li>
-                        <li class="stack__item">
-                            <img src="./assets/images/mongodb.png" alt="MongoDB">
-                        </li>
-                        <li class="stack__item">
-                            <img src="./assets/images/python.png" alt="MongoDB">
-                        </li>
-                        <li class="stack__item">
-                            <img src="./assets/images/redis.png" alt="MongoDB">
+                            <img src="/assets/images/javascript.png" alt="React">
                         </li>
                     </ul>
                 </div>
                 <div class="skills__category">
-                    <h3>Frameworks</h3>
+                    <h3 class="skill_category">Backend</h3>
                     <ul class="backend__stack">
                         <li class="stack__item">
-                            <img src="./assets/images/nextjs.png" alt="Node.js">
+                            <img src="/assets/images/node.png" alt="Node.js">
                         </li>
                         <li class="stack__item">
-                            <img src="./assets/images/django.png" alt="Express.js">
+                            <img src="/assets/images/postgresql.png" alt="Express.js">
+                        </li>
+                        <li class="stack__item">
+                            <img src="/assets/images/mongodb.png" alt="MongoDB">
+                        </li>
+                        <li class="stack__item">
+                            <img src="/assets/images/python.png" alt="MongoDB">
+                        </li>
+                        <li class="stack__item">
+                            <img src="/assets/images/redis.png" alt="MongoDB">
                         </li>
                     </ul>
                 </div>
                 <div class="skills__category">
-                    <h3>Blockchain</h3>
-                    <ul class="backend__stack">
+                    <h3 class="skill_category">Frameworks</h3>
+                    <ul class="frameworks__stack">
                         <li class="stack__item">
-                            <img src="./assets/images/hardhat.png" alt="Node.js">
+                            <img src="/assets/images/nextjs.png" alt="Node.js">
                         </li>
                         <li class="stack__item">
-                            <img src="./assets/images/solidity.png" alt="Express.js">
+                            <img src="/assets/images/django.png" alt="Express.js">
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skill_category">Blockchain</h3>
+                    <ul class="blockchain__stack">
+                        <li class="stack__item">
+                            <img src="/assets/images/hardhat.png" alt="Node.js">
+                        </li>
+                        <li class="stack__item">
+                            <img src="/assets/images/solidity.png" alt="Express.js">
                         </li>
                     </ul>
                 </div>
@@ -197,6 +200,7 @@
         </div>
     </section>
     <!--END OF SKILLS-->
+    <!--START OF PORTFOLIO-->
     <section class="portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <p>Check out some of my recent works!</p>
@@ -204,77 +208,78 @@
             <div class="portfolio__projects">
                 <div class="portfolio__project ">
                     <span class="project-type-label frontend">Frontend</span>
-                    <h3>Nike Concept Website</h3>
+                    <h3 class="project_title">Nike Concept Website</h3>
                     <div class="portfolio-container">
-                        <img src="./assets/images/portfolio/nike.png" alt="Project 1">
+                        <img src="/assets/images/portfolio/nike.png" alt="Project 1">
                     </div>
                     <div class="portfolio__project-buttons">
-                        <a href="https://github.com/diegoddie/Nike_Concept_Website-TailwindCSS" class="btn sm primary">GitHub</a>
-                        <a href="https://nikeconceptwebsite.netlify.app/" class="btn sm">Live</a>
+                        <a href="https://github.com/diegoddie/Nike_Concept_Website-TailwindCSS" class="btn sm primary" target="_blank">GitHub</a>
+                        <a href="https://nikeconceptwebsite.netlify.app/" class="btn sm" target="_blank">Live</a>
                     </div>
                 </div>
                 <div class="portfolio__project ">
                     <span class="project-type-label blockchain">Blockchain</span>
-                    <h3>Crowdfunding DApp</h3>
+                    <h3 class="project_title">Crowdfunding DApp</h3>
                     <div class="portfolio-container">
-                        <img src="./assets/images/portfolio/CrowdfundingDapp.png" alt="Project 2">
+                        <img src="/assets/images/portfolio/CrowdfundingDapp.png" alt="Project 2">
                     </div>
                     <div class="portfolio__project-buttons">
-                        <a href="https://github.com/diegoddie/Web3Raise-CrowdfundingDapp" class="btn sm primary">GitHub</a>
-                        <a href="https://web3-raise-crowdfunding-dapp.vercel.app/" class="btn sm">Live</a>
+                        <a href="https://github.com/diegoddie/Web3Raise-CrowdfundingDapp" class="btn sm primary" target="_blank">GitHub</a>
+                        <a href="https://web3-raise-crowdfunding-dapp.vercel.app/" class="btn sm" target="_blank">Live</a>
                     </div>
                 </div>
                 <div class="portfolio__project ">
                     <span class="project-type-label full-stack">Full Stack</span>
-                    <h3>WizAIrd</h3>
+                    <h3 class="project_title">WizAIrd</h3>
                     <div class="portfolio-container">
-                        <img src="./assets/images/portfolio/WizAIrd.png" alt="Project 3">
+                        <img src="/assets/images/portfolio/WizAIrd.png" alt="Project 3">
                     </div>
                     <div class="portfolio__project-buttons">
-                        <a href="https://github.com/diegoddie/AI_Generator_SaaS" class="btn sm primary">GitHub</a>
-                        <a href="https://ai-generator-saa-s.vercel.app/" class="btn sm">Live</a>
+                        <a href="https://github.com/diegoddie/AI_Generator_SaaS" class="btn sm primary" target="_blank">GitHub</a>
+                        <a href="https://ai-generator-saa-s.vercel.app/" class="btn sm" target="_blank">Live</a>
                     </div>
                 </div>
                 <div class="portfolio__project ">
                     <span class="project-type-label frontend">Frontend</span>
-                    <h3>E-Commerce Landing Page</h3>
+                    <h3 class="project_title">E-Commerce Landing Page</h3>
                     <div class="portfolio-container">
-                        <img src="./assets/images/portfolio/Fauxica.png" alt="Project 4">
+                        <img src="/assets/images/portfolio/Fauxica.png" alt="Project 4">
                     </div>
                     <div class="portfolio__project-buttons">
-                        <a href="https://github.com/diegoddie/FrontEnd_LandingPage" class="btn sm primary">GitHub</a>
-                        <a href="https://fauxicastore.netlify.app/" class="btn sm">Live</a>
+                        <a href="https://github.com/diegoddie/FrontEnd_LandingPage" class="btn sm primary" target="_blank">GitHub</a>
+                        <a href="https://fauxicastore.netlify.app/" class="btn sm" target="_blank">Live</a>
                     </div>
                 </div>
                 <div class="portfolio__project ">
                     <span class="project-type-label blockchain">Blockchain</span>
-                    <h3>GreenStepBids</h3>
+                    <h3 class="project_title">GreenStepBids</h3>
                     <div class="portfolio-container">
-                        <img src="./assets/images/portfolio/greenstepbids.png" alt="Project 5">
+                        <img src="/assets/images/portfolio/greenstepbids.png" alt="Project 5">
                     </div>
                     <div class="portfolio__project-buttons">
-                        <a href="https://github.com/diegoddie/DJANGO_Start2Impact_FinalProject" class="btn sm primary">GitHub</a>
-                        <a href="https://web-production-bbee.up.railway.app/" class="btn sm">Live</a>
+                        <a href="https://github.com/diegoddie/DJANGO_Start2Impact_FinalProject" class="btn sm primary" target="_blank">GitHub</a>
+                        <a href="https://web-production-bbee.up.railway.app/" class="btn sm" target="_blank">Live</a>
                     </div>
                 </div>
                 <div class="portfolio__project ">
                     <span class="project-type-label full-stack">Full Stack</span>
-                    <h3>E-Commerce Full Stack</h3>
+                    <h3 class="project_title">E-Commerce Full Stack</h3>
                     <div class="portfolio-container">
-                        <img src="./assets/images/portfolio/Ecommerce.png" alt="Project 6">
+                        <img src="/assets/images/portfolio/Ecommerce.png" alt="Project 6">
                     </div>
                     <div class="portfolio__project-buttons">
-                        <a href="https://github.com/diegoddie/NextJs_FullStack_Ecommerce" class="btn sm primary">GitHub</a>
-                        <a href="https://epic-store-one.vercel.app/" class="btn sm">Live</a>
+                        <a href="https://github.com/diegoddie/NextJs_FullStack_Ecommerce" class="btn sm primary" target="_blank">GitHub</a>
+                        <a href="https://epic-store-one.vercel.app/" class="btn sm" target="_blank">Live</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--END OF PORTFOLIO-->
+    <!--START OF CONTACT-->
     <section class="contact" id="contact">
         <h1>Contact</h1>
-        <p>Submit the form below to contact me.</p>
+        <p class="contact_text">Submit the form below to contact me.</p>
         <div class="container contact__container">
             <form action="https://formsubmit.co/146a6108f65c6a88891b95a6ac9af967" method="POST" class="contact__form">
                 <input type="text" placeholder="Full Name" name="name" required>
@@ -284,6 +289,8 @@
             </form>
         </div>
     </section>
+    <!--END OF CONTACT-->
+    <!--START OF FOOTER-->
     <footer>
         <div class="container footer__container">
             <ul class="footer__menu">
@@ -304,5 +311,6 @@
             <small>2023 &copy; Diego Lauricella</small>
         </div>
     </footer>
+    <!--END OF FOOTER-->
 </body>
 </html>
